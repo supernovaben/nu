@@ -1,3 +1,12 @@
+/* Font imports */
+@font-face {
+    font-family: 'Casad-Serial';
+    src: url('fonts/Casad-Serial-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +16,7 @@
 body {
     background-color: #000000;
     color: #ffffff;
-    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Casad-Serial', serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -50,14 +59,14 @@ body {
 .title {
     font-size: 72px;
     font-weight: 400;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.04em;
     margin-bottom: 40px;
 }
 
 .tagline {
     font-size: 24px;
     line-height: 1.6;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.03em;
     margin-bottom: 50px;
     max-width: 700px;
 }
@@ -68,13 +77,13 @@ body {
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     padding: 16px 40px;
     border: none;
     transition: all 0.3s ease;
     display: inline-block;
-    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 .learn-more:hover {
@@ -86,9 +95,9 @@ body {
 
 .footer {
     text-align: center;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 11px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0;
     opacity: 0.6;
     line-height: 1.6;
     margin-top: 40px;
@@ -145,3 +154,4 @@ body {
         bottom: -10px;
     }
 }
+```
