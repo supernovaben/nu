@@ -170,6 +170,7 @@ body {
     }
 
     .nu-symbol {
+        font-size: 0.75em;
         margin-left: 10px;
         padding: 0 6px;
     }
