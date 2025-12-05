@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Casad-Serial';
     src: url('fonts/Casad-Serial-Regular.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -16,7 +16,7 @@
 body {
     background-color: #000000;
     color: #ffffff;
-    font-family: 'Casad-Serial', serif;
+    font-family: 'Casad-Serial', Georgia, serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
