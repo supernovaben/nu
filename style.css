@@ -62,6 +62,21 @@ body {
     margin-left: 8px;
 }
 
+/* Glimmer animation for nu symbols */
+.glimmer {
+    animation: glimmer 3s ease-in-out infinite;
+}
+
+@keyframes glimmer {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+}
+
 .title {
     font-size: 72px;
     font-weight: 400;
@@ -118,6 +133,12 @@ body {
     margin-top: 40px;
 }
 
+/* Nu symbol in footer - Casad-Serial font */
+.nu-footer {
+    font-family: 'Casad-Serial', serif;
+    font-size: 11px;
+}
+
 .heart {
     color: #ff0000;
 }
@@ -169,4 +190,3 @@ body {
         bottom: -10px;
     }
 }
-```
