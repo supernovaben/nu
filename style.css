@@ -77,6 +77,15 @@ body {
     max-width: 500px;
 }
 
+.subtagline {
+    font-size: 24px;
+    opacity: 0.5;
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    max-width: 500px;
+}
+
 .learn-more {
     background-color: #ffffff;
     color: #000000;
