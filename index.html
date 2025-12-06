@@ -14,6 +14,79 @@
     <link rel="manifest" href="/site.webmanifest" />
 </head>
 <body>
+    
+    <!-- Background Network Animation -->
+    <div class="network-background">
+        <svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <filter id="glow">
+                    <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                    <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+                
+                <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#ff0000;stop-opacity:0.8" />
+                    <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.3" />
+                </linearGradient>
+            </defs>
+            
+            <line class="connection" x1="300" y1="300" x2="300" y2="100" stroke="url(#connectionGradient)" stroke-width="1" />
+            <line class="connection" x1="300" y1="300" x2="470" y2="170" stroke="url(#connectionGradient)" stroke-width="1" style="animation-delay: 0.1s" />
+            <line class="connection" x1="300" y1="300" x2="500" y2="350" stroke="url(#connectionGradient)" stroke-width="1" style="animation-delay: 0.2s" />
+            <line class="connection" x1="300" y1="300" x2="400" y2="500" stroke="url(#connectionGradient)" stroke-width="1" style="animation-delay: 0.3s" />
+            <line class="connection" x1="300" y1="300" x2="200" y2="500" stroke="url(#connectionGradient)" stroke-width="1" style="animation-delay: 0.4s" />
+            <line class="connection" x1="300" y1="300" x2="100" y2="350" stroke="url(#connectionGradient)" stroke-width="1" style="animation-delay: 0.5s" />
+            <line class="connection" x1="300" y1="300" x2="130" y2="170" stroke="url(#connectionGradient)" stroke-width="1" style="animation-delay: 0.6s" />
+            
+            <line class="connection" x1="300" y1="100" x2="470" y2="170" stroke="#444" stroke-width="1" opacity="0.2" stroke-dasharray="4,4" />
+            <line class="connection" x1="470" y1="170" x2="500" y2="350" stroke="#444" stroke-width="1" opacity="0.2" stroke-dasharray="4,4" />
+            <line class="connection" x1="500" y1="350" x2="400" y2="500" stroke="#444" stroke-width="1" opacity="0.2" stroke-dasharray="4,4" />
+            <line class="connection" x1="400" y1="500" x2="200" y2="500" stroke="#444" stroke-width="1" opacity="0.2" stroke-dasharray="4,4" />
+            <line class="connection" x1="200" y1="500" x2="100" y2="350" stroke="#444" stroke-width="1" opacity="0.2" stroke-dasharray="4,4" />
+            <line class="connection" x1="100" y1="350" x2="130" y2="170" stroke="#444" stroke-width="1" opacity="0.2" stroke-dasharray="4,4" />
+            <line class="connection" x1="130" y1="170" x2="300" y2="100" stroke="#444" stroke-width="1" opacity="0.2" stroke-dasharray="4,4" />
+            
+            <circle class="energy-particle" r="3" fill="#ff0000" filter="url(#glow)">
+                <animateMotion dur="4s" repeatCount="indefinite" path="M300,300 L300,100" />
+            </circle>
+            <circle class="energy-particle" r="3" fill="#ff0000" filter="url(#glow)" style="animation-delay: 0.6s">
+                <animateMotion dur="4s" repeatCount="indefinite" path="M300,300 L470,170" />
+            </circle>
+            <circle class="energy-particle" r="3" fill="#ff0000" filter="url(#glow)" style="animation-delay: 1.2s">
+                <animateMotion dur="4s" repeatCount="indefinite" path="M300,300 L500,350" />
+            </circle>
+            <circle class="energy-particle" r="3" fill="#ff0000" filter="url(#glow)" style="animation-delay: 1.8s">
+                <animateMotion dur="4s" repeatCount="indefinite" path="M300,300 L400,500" />
+            </circle>
+            <circle class="energy-particle" r="3" fill="#ff0000" filter="url(#glow)" style="animation-delay: 2.4s">
+                <animateMotion dur="4s" repeatCount="indefinite" path="M300,300 L200,500" />
+            </circle>
+            <circle class="energy-particle" r="3" fill="#ff0000" filter="url(#glow)" style="animation-delay: 3s">
+                <animateMotion dur="4s" repeatCount="indefinite" path="M300,300 L100,350" />
+            </circle>
+            <circle class="energy-particle" r="3" fill="#ff0000" filter="url(#glow)" style="animation-delay: 3.6s">
+                <animateMotion dur="4s" repeatCount="indefinite" path="M300,300 L130,170" />
+            </circle>
+            
+            <g class="center-node">
+                <circle cx="300" cy="300" r="40" fill="#000" stroke="#ff0000" stroke-width="2" filter="url(#glow)" />
+                <text x="300" y="318" text-anchor="middle" fill="#ff0000" font-size="48" font-family="Georgia, serif" font-style="italic">ν</text>
+            </g>
+            
+            <g class="outer-node"><circle cx="300" cy="100" r="12" fill="#fff" stroke="#666" stroke-width="2" /></g>
+            <g class="outer-node"><circle cx="470" cy="170" r="12" fill="#fff" stroke="#666" stroke-width="2" /></g>
+            <g class="outer-node"><circle cx="500" cy="350" r="12" fill="#fff" stroke="#666" stroke-width="2" /></g>
+            <g class="outer-node"><circle cx="400" cy="500" r="12" fill="#fff" stroke="#666" stroke-width="2" /></g>
+            <g class="outer-node"><circle cx="200" cy="500" r="12" fill="#fff" stroke="#666" stroke-width="2" /></g>
+            <g class="outer-node"><circle cx="100" cy="350" r="12" fill="#fff" stroke="#666" stroke-width="2" /></g>
+            <g class="outer-node"><circle cx="130" cy="170" r="12" fill="#fff" stroke="#666" stroke-width="2" /></g>
+        </svg>
+    </div>
+
+    <!-- Main Content (on top of background) -->
     <div class="container">
         <main class="content">
             <h1 class="title">Nu <span class="nu-symbol glimmer">ν</span></h1>
