@@ -182,7 +182,7 @@ body {
 .tagline {
     font-size: 24px;
     line-height: 1.05;
-    letter-spacing: 0em;
+    letter-spacing: -0.04em;
     margin-bottom: 50px;
     max-width: 500px;
 }
@@ -191,7 +191,7 @@ body {
     font-size: 24px;
     opacity: 0.5;
     line-height: 1.05;
-    letter-spacing: 0em;
+    letter-spacing: -0.04em;
     margin-bottom: 50px;
     max-width: 500px;
 }
@@ -202,7 +202,7 @@ body {
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: 0em;
+    letter-spacing: -0em;
     text-transform: uppercase;
     padding: 16px 40px;
     border: none;
@@ -222,7 +222,7 @@ body {
     text-align: center;
     font-family: 'Nu-Sans-Serif', Helvetica, sans-serif;
     font-size: 11px;
-    letter-spacing: 0;
+    letter-spacing: -0.02;
     opacity: 0.6;
     line-height: 1.6;
     margin-top: 40px;
