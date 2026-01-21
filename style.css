@@ -147,6 +147,7 @@ body {
 }
 
 .nu-symbol {
+    font-family: 'Nu-Serif', serif;
     font-size: 0.85em;
     opacity: 0.5;
     margin-left: 12px; 
