@@ -152,7 +152,7 @@ body {
     opacity: 0.5;
     margin-left: 0px; 
     display: inline-block;
-    padding: 0 4px; 
+    padding: 0 0px; 
 }
 
 /* Glimmer animation for nu symbols */
@@ -263,7 +263,7 @@ body {
     .nu-symbol {
         font-size: 0.75em;
         margin-left: 0px;
-        padding: 0 6px;
+        padding: 0 0px;
     }
     
     .tagline {
