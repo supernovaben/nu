@@ -181,7 +181,7 @@ body {
 .tagline {
     font-size: 24px;
     line-height: 1.05;
-    letter-spacing: -0.05em;
+    letter-spacing: 0em;
     margin-bottom: 50px;
     max-width: 500px;
 }
@@ -190,7 +190,7 @@ body {
     font-size: 24px;
     opacity: 0.5;
     line-height: 1.05;
-    letter-spacing: -0.05em;
+    letter-spacing: 0em;
     margin-bottom: 50px;
     max-width: 500px;
 }
@@ -201,7 +201,7 @@ body {
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0em;
     text-transform: uppercase;
     padding: 16px 40px;
     border: none;
