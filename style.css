@@ -150,7 +150,7 @@ body {
     font-family: 'Nu-Serif', serif;
     font-size: 0.85em;
     opacity: 0.5;
-    margin-left: 12px; 
+    margin-left: 0px; 
     display: inline-block;
     padding: 0 4px; 
 }
@@ -262,7 +262,7 @@ body {
 
     .nu-symbol {
         font-size: 0.75em;
-        margin-left: 10px;
+        margin-left: 0px;
         padding: 0 6px;
     }
     
