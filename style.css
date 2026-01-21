@@ -150,10 +150,14 @@ body {
     font-family: 'Nu-Serif', serif;
     font-size: 0.85em;
     opacity: 0.5;
-    margin-left: 0px; 
-    display: inline-block;
-    padding: 0 0px; 
+
+    display: inline;           
+    margin-left: -0.15em;     
+
+    padding: 0;
+    font-style: normal;
 }
+
 
 /* Glimmer animation for nu symbols */
 .glimmer {
@@ -260,10 +264,13 @@ body {
         overflow: visible;
     }
 
-    .nu-symbol {
+      .nu-symbol {
         font-size: 0.75em;
-        margin-left: 0px;
-        padding: 0 0px;
+
+        display: inline;        
+        margin-left: -0.15em;  
+        padding: 0;
+        font-style: normal;
     }
     
     .tagline {
