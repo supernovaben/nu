@@ -90,8 +90,8 @@
 
 /* Font imports */
 @font-face {
-    font-family: 'Casad-Serial';
-    src: url('fonts/Casad-Serial-Regular.ttf') format('truetype');
+    font-family: 'Nu-Serif';
+    src: url('fonts/Times New Roman MT Condensed Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -106,7 +106,7 @@
 body {
     background-color: #000000;
     color: #ffffff;
-    font-family: 'Casad-Serial', Georgia, serif;
+    font-family: 'Nu-Serif', Georgia, serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -207,7 +207,7 @@ body {
     border: none;
     transition: all 0.3s ease;
     display: inline-block;
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Nu-Sans-Serif', Helvetica, sans-serif;
 }
 
 .learn-more:hover {
@@ -219,7 +219,7 @@ body {
 
 .footer {
     text-align: center;
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Nu-Sans-Serif', Helvetica, sans-serif;
     font-size: 11px;
     letter-spacing: 0;
     opacity: 0.6;
@@ -228,7 +228,7 @@ body {
 }
 
 .nu-footer {
-    font-family: 'Casad-Serial', serif;
+    font-family: 'Nu-Serif', serif;
     font-size: 11px;
 }
 
