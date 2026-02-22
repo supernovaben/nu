@@ -56,15 +56,22 @@
   
     let charPositions = [];
     let fontSize, lineHeight, charWidth;
+    let contentMinCol = cols, contentMaxCol = 0, contentMinRow = rows, contentMaxRow = 0;
   
     function buildCharMap() {
       charPositions = [];
+      contentMinCol = cols; contentMaxCol = 0;
+      contentMinRow = rows; contentMaxRow = 0;
       for (let r = 0; r < rows; r++) {
         const line = ASCII[r];
         for (let c = 0; c < line.length; c++) {
           const ch = line[c];
           if (ch !== ' ') {
             charPositions.push({ ch, r, c });
+            if (c < contentMinCol) contentMinCol = c;
+            if (c > contentMaxCol) contentMaxCol = c;
+            if (r < contentMinRow) contentMinRow = r;
+            if (r > contentMaxRow) contentMaxRow = r;
           }
         }
       }
@@ -94,10 +101,10 @@
       const w = canvas.clientWidth;
       const h = canvas.clientHeight;
   
-      const gridW = cols * charWidth;
-      const gridH = rows * lineHeight;
-      const offsetX = (w - gridW) / 2;
-      const offsetY = (h - gridH) / 2;
+      const contentW = (contentMaxCol - contentMinCol + 1) * charWidth;
+      const contentH = (contentMaxRow - contentMinRow + 1) * lineHeight;
+      const offsetX = (w - contentW) / 2 - contentMinCol * charWidth;
+      const offsetY = (h - contentH) / 2 - contentMinRow * lineHeight;
   
       ctx.clearRect(0, 0, w, h);
       ctx.font = `${fontSize}px "Courier New", Courier, monospace`;
