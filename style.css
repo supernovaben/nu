@@ -36,7 +36,6 @@ a { color: inherit; text-decoration: none; }
 .accent {
   color: var(--red);
   font-family: var(--serif);
-  font-style: italic;
 }
 
 .heart { color: var(--red); }
