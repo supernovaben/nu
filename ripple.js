@@ -137,6 +137,9 @@
     buildCharMap();
     resize();
     window.addEventListener('resize', resize);
+    if (window.ResizeObserver && canvas.parentElement) {
+      new ResizeObserver(() => resize()).observe(canvas.parentElement);
+    }
     requestAnimationFrame(draw);
   })();
   
