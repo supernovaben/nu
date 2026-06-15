@@ -80,10 +80,10 @@
     function computeScale() {
       const w = canvas.clientWidth;
       const h = canvas.clientHeight;
-      const padding = 0.85;
+      const padding = 0.92;
       const scaleX = (w * padding) / (cols * BASE_FONT * 0.6);
       const scaleY = (h * padding) / (rows * BASE_FONT * 1.2);
-      const scale = Math.min(scaleX, scaleY, 1);
+      const scale = Math.min(scaleX, scaleY);
       fontSize = BASE_FONT * scale;
       lineHeight = fontSize * 1.2;
       charWidth = fontSize * 0.6;
